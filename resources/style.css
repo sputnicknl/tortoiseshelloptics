@@ -4,6 +4,8 @@
   font-family: Helvetica;
 }
 
+/* MAIN BANNER AND HEADER */
+
 .main-banner {
   display: flex;
   background-image: url("../resources/images/glasses-bg.png");
@@ -37,6 +39,7 @@
 .logo img {
   height: 1.5rem;
   margin-right: 1rem;
+  margin-bottom: 0;
 }
 
 .nav li {
@@ -68,4 +71,86 @@
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+/* ICONS SECTION*/
+
+.icons-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.icon, img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon-paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.icon-paper img {
+  width: 3.5rem;
+}
+
+/* PHILOSOPHY AND APPOINTMENTS */
+.philosphy-app-box {
+  display: flex;
+}
+
+.philosphy-app-box .title {
+  display: block;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy {
+  display: block;
+  width: 35%;
+  margin-right: 10%;
+}
+
+.appointments {
+  display: block;
+  width: 35%;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  color: black;
+}
+
+.footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  margin-bottom: 0;
+}
+
+.footer div {
+  display: block;
 }
