@@ -4,6 +4,9 @@
   font-family: Helvetica;
 }
 
+li {
+  text-decoration: none;
+}
 /* MAIN BANNER AND HEADER */
 
 .main-banner {
@@ -50,6 +53,10 @@
 .nav a {
   color: white;
   text-decoration: none;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .banner-container {
@@ -153,4 +160,136 @@
 
 .footer div {
   display: block;
+}
+
+/* RESPONSIVE */
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-banner {
+    height: 22rem;
+    width: 100%;
+  }
+  .header {
+    /* padding-top: 0; */
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  .banner-text {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav  {
+    display: inline;
+    text-align: center;
+  }
+
+  .mobile-nav ul {
+    margin-right: 2rem;
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-text {
+    /* padding: 1rem auto 1rem auto; */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 9rem;
+    }
+
+  .banner-text h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    /* padding: 1rem auto 1rem auto; */
+  }
+
+  .icons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .icon-paper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .icon img {
+    margin-top: 1.54rem;
+    padding: 0;
+  }
+
+  .icon, span {
+    font-size: 0.77rem;
+    margin-top: 0.5rem:
+  }
+
+  .philosphy-app-box {
+    flex-direction: column;
+  }
+
+  .philosophy {
+    width: 100%;
+  }
+
+  .appointments {
+    width: 100%;
+  }
+
+  .footer div {
+    display: none;
+  }
+
+  .footer img {
+    /* margin: auto; */
+    /* padding: 4rem 4rem 4rem 4rem; */
+    margin: 0 auto;
+    padding: 4rem;
+  }
 }
